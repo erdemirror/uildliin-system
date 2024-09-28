@@ -1,29 +1,22 @@
-let currentSlide = 0;
-const slides = document.querySelectorAll(".slide");
+let currentSlide = 0; // Track the current slide index
+const slides = document.querySelectorAll(".slide"); // Select all slides
 
-// Wait for the DOM to be fully loaded
-document.addEventListener("DOMContentLoaded", () => {
-  showSlide(currentSlide); // Show the first slide
+// Show the first slide
+slides[currentSlide].classList.add("active");
+
+// Function to change slide
+function changeSlide(index) {
+  slides[currentSlide].classList.remove("active"); // Hide the current slide
+  currentSlide = (index + slides.length) % slides.length; // Calculate the new slide index
+  slides[currentSlide].classList.add("active"); // Show the new slide
+}
+
+// Next Button Event
+document.getElementById("next-btn").addEventListener("click", function () {
+  changeSlide(currentSlide + 1); // Go to the next slide
 });
 
-// Function to show the slide by index
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.classList.remove("active"); // Remove active class from all slides
-    if (i === index) {
-      slide.classList.add("active"); // Add active class to the current slide
-    }
-  });
-}
-
-// Function to go to the next slide
-function nextSlide() {
-  currentSlide = (currentSlide + 1) % slides.length;
-  showSlide(currentSlide);
-}
-
-// Function to go to the previous slide
-function prevSlide() {
-  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-  showSlide(currentSlide);
-}
+// Previous Button Event
+document.getElementById("prev-btn").addEventListener("click", function () {
+  changeSlide(currentSlide - 1); // Go to the previous slide
+});

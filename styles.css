@@ -1,23 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
   background: linear-gradient(to right, #339, #f0c);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.presentation {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main paragraph background card */
 .presentation-card {
   width: 600px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.5); /* Translucent background */
   padding: 3rem;
   border-radius: 12px;
   position: relative;
@@ -25,14 +28,15 @@ body {
   text-align: center;
 }
 
+/* Rotated background layer */
 .presentation-card::before {
   content: "";
   position: absolute;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.15); /* Subtle background layer */
   inset: 0;
+  transform: rotate(-5deg);
   z-index: -1;
-  transform: rotate(-4deg);
-  border-radius: 12px;
+  border-radius: 12px; /* Ensure it follows the card shape */
 }
 
 h1 {
@@ -64,7 +68,8 @@ p {
 .controls {
   display: flex;
   justify-content: space-between;
-  margin-top: 2rem;
+  width: 300px;
+  margin: 20px;
 }
 
 button {

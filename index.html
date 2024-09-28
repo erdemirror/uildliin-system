@@ -3,62 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Process and Subprocess (Operating System)</title>
+    <title>Processes and Threads</title>
     <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <div class="presentation-card">
+    <div class="presentation">
       <!-- Slide 1 -->
-      <div class="slide active" id="slide1">
-        <img src="Images/image1.jpg" alt="Process Image" />
-        <h1>Processes in Operating Systems</h1>
-        <p>
-          A process is a program in execution, consisting of program code, data,
-          and system resources.
-        </p>
+      <div class="slide active" id="slide-1">
+        <div class="presentation-card">
+          <h1>Processes and Threads</h1>
+          <img src="Images/image1.jpg" alt="Intro Image" />
+          <p>Introduction</p>
+        </div>
       </div>
-
       <!-- Slide 2 -->
-      <div class="slide" id="slide2">
-        <img src="Images/image2.jpg" alt="Lifecycle Image" />
-        <h1>Process Lifecycle</h1>
-        <p>
-          The process lifecycle includes states such as New, Ready, Running,
-          Waiting, and Terminated.
-        </p>
+      <div class="slide" id="slide-2">
+        <div class="presentation-card">
+          <h1>What is a Process?</h1>
+          <img src="Images/image2.jpg" alt="Process Image" />
+          <p>A process is a program in execution.</p>
+        </div>
       </div>
-
       <!-- Slide 3 -->
-      <div class="slide" id="slide3">
-        <img src="Images/image3.jpg" alt="Subprocess Image" />
-        <h1>Subprocesses</h1>
-        <p>
-          Subprocesses are child processes created by a parent, capable of
-          concurrent execution.
-        </p>
+      <div class="slide" id="slide-3">
+        <div class="presentation-card">
+          <h1>Characteristics of Processes</h1>
+          <img src="Images/image1.jpg" alt="Characteristics Image" />
+          <ul>
+            <li>Has its own memory space</li>
+            <li>Independent execution</li>
+          </ul>
+        </div>
       </div>
-
-      <!-- Slide 4 -->
-      <div class="slide" id="slide4">
-        <img src="Images/image4.jpg" alt="PCB Image" />
-        <h1>Process Control Block (PCB)</h1>
-        <p>
-          The PCB holds information about a process, such as its ID, state, and
-          memory details.
-        </p>
-      </div>
-
-      <!-- Controls for navigation -->
-      <div class="controls">
-        <button class="prev" onclick="prevSlide()">Previous</button>
-        <button class="next" onclick="nextSlide()">Next</button>
+      <!-- Additional slides can follow this structure -->
+      <!-- Slide 20 -->
+      <div class="slide" id="slide-20">
+        <div class="presentation-card">
+          <h1>Thank You!</h1>
+          <img src="images/thankyou.jpg" alt="Thank You Image" />
+          <p>End of Presentation</p>
+        </div>
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Controls for navigation -->
+    <div class="controls">
+      <button id="prev-btn">Previous</button>
+      <button id="next-btn">Next</button>
+    </div>
+
+    <script src="scripts.js"></script>
   </body>
 </html>
