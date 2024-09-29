@@ -11,128 +11,411 @@
       <!-- Slide 1 -->
       <div class="slide active" id="slide-1">
         <div class="presentation-card">
-          <h1>Processes and Threads</h1>
+          <h1>Процесс болон салбар процесс</h1>
           <img src="Images/image1.jpg" alt="Intro Image" />
-          <p>Introduction</p>
         </div>
       </div>
+
       <!-- Slide 2 -->
       <div class="slide" id="slide-2">
         <div class="presentation-card">
-          <h1>What is a Process?</h1>
-          <img src="Images/image2.jpg" alt="Process Image" />
-          <p>Процесс (process/task) гэдэг нь үйлдийн системийн удирдлаган доор компьютерийн нөөцөөр 
-            (санах ой, процессорын хугацаа г.м) тусгайлан хангагдсан, төв процессорт гүйцэтгэгдэх ажлыг 
-            хэлнэ. Процесс нь ямар нэгэн програм эсвэл програмын нэг хэсэг байж болно..</p>
+          <h1>Агуулга</h1>
+          <ol style="margin-left: 0; padding-left: 20px; text-align: left">
+            <li>Процесс гэж юу вэ?</li>
+            <li>Салбар процесс гэж юу вэ?</li>
+            <li>Процесс ба салбар процессийн ялгаа</li>
+            <li>Процессийн менежмент</li>
+            <li>Процесс болон салбар процессийн хэрэглээ</li>
+            <li>Дүгнэлт</li>
+            <li>Ашигласан материалууд</li>
+          </ol>
         </div>
       </div>
+
       <!-- Slide 3 -->
-      <div class="slide" id="slide-2">
+      <div class="slide" id="slide-3">
+        <div class="presentation-card">
+          <h1>What is a Process?</h1>
+          <img src="Images/image1.jpg" alt="Process Image" />
+          <p>
+            Процесс (process/task) гэдэг нь үйлдийн системийн удирдлаган доор
+            компьютерийн нөөцөөр (санах ой, процессорын хугацаа г.м) тусгайлан
+            хангагдсан, төв процессорт гүйцэтгэгдэх ажлыг хэлнэ. Процесс нь ямар
+            нэгэн програм эсвэл програмын нэг хэсэг байж болно.
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="slide" id="slide-4">
         <div class="presentation-card">
           <h1>Процесс гэж юу вэ ?</h1>
           <img src="Images/A_image8.png" alt="Software" />
-          <p>Компьютерийн бүтцийг Hardware, Software гэж хуваан үзэж болно
-            Application гэсэн давхрага нь Software - тайгаа шууд хамааралтай ба энэ нь хэрэглэгчийн
-            удирдаж байгаа бүх л application, program - ийг агуулдаг гэдэгийг үзсэн.<div class=""></div></p>
+          <p>
+            Компьютерийн бүтцийг Hardware, Software гэж хуваан үзэж болно
+            Application гэсэн давхрага нь Software - тайгаа шууд хамааралтай ба
+            энэ нь хэрэглэгчийн удирдаж байгаа бүх л application, program - ийг
+            агуулдаг гэдэгийг үзсэн.
+          </p>
         </div>
       </div>
-      <!-- Slide 4 -->
-      <div class="slide" id="slide-2">
+
+      <!-- Slide 5 -->
+      <div class="slide" id="slide-5">
         <div class="presentation-card">
           <h1>Процесс гэж юу вэ ?</h1>
           <img src="Images/A_image1.png" alt="Task Management" />
-          <p>Үйлдийн систем буюу Software давхрага нь их зүйлд ашиглагддаг. Тэдний
-            нэг нь Task Management юм. Энэ нь хэрэглэгчийн эсвэл үйлдийн систем өөрөө ч 
-            эхлүүлсэн CPU дээр ажиллаж байгаа програмыг хэлнэ.<div class=""></div></p>
+          <p>
+            Үйлдийн систем буюу Software давхрага нь их зүйлд ашиглагддаг.
+            Тэдний нэг нь Task Management юм. Энэ нь хэрэглэгчийн эсвэл үйлдийн
+            систем өөрөө ч эхлүүлсэн CPU дээр ажиллаж байгаа програмыг хэлнэ.
+          </p>
         </div>
-        
       </div>
-      <!-- Slide 5 -->
-      <div class="slide" id="slide-3">
+
+      <!-- Slide 6 -->
+      <div class="slide" id="slide-6">
         <div class="presentation-card">
           <h1>Процессын төлөв</h1>
-          <img src="Images/A_image2.png" alt="Uy" />
+          <img src="Images/A_image2.png" alt="Process State" />
           <p>Процесс нь үргэлж ямар нэгэн төлөвт байдаг.</p>
-          <ol style="margin-left: 0; padding-left: 20px; text-align: left;">
+          <ol style="margin-left: 0; padding-left: 20px; text-align: left">
             <li>New</li>
             <li>Ready</li>
             <li>Running</li>
             <li>Waiting</li>
             <li>Terminated</li>
-          </ol>                       
+          </ol>
         </div>
       </div>
-      <!-- Slide 6 -->
-      <div class="slide" id="slide-3">
-        <div class="presentation-card">
-          <h1>Процессын төлөв</h1>
-          <img src="Images/A_image9.png" alt="Uy2" />
-          <p>Процесс нь үүсэх үедээ New төлөвт байна. CPU дээр ажиллах боломжтой 
-            болсон үедээ Ready төлөвт шилжинэ. Үйлдийн системд нь OS Scheduler буюу төлөвлөгч байдаг.
-            Энэ нь одоо Run хийж буй Процессыг хангалттай удаан үргэлжилсэн гэж үзвэл тэр 
-            процессыг Waiting эсвэл буцаан Ready төлөвт шилжүүлдэг.
-          </p>     
-        </div>
-      </div>
+
       <!-- Slide 7 -->
-      <div class="slide" id="slide-3">
+      <div class="slide" id="slide-7">
         <div class="presentation-card">
           <h1>Процессын төлөв</h1>
-          <img src="Images/A_image3.png" alt="Uy3" />
-          <img src="Images/A_image4.png" alt="Uy4" />
+          <img src="Images/A_image9.png" alt="Process Lifecycle" />
+          <p>
+            Процесс нь үүсэх үедээ New төлөвт байна. CPU дээр ажиллах боломжтой
+            болсон үедээ Ready төлөвт шилжинэ. Үйллийн системд нь OS Scheduler
+            буюу төлөвлөгч байдаг. Энэ нь одоо Run хийж буй Процессыг хангалттай
+            удаан үргэлжилсэн гэж үзвэл тэр процессыг Waiting эсвэл буцаан Ready
+            төлөвт шилжүүлдэг.
+          </p>
         </div>
       </div>
+
       <!-- Slide 8 -->
-      <div class="slide" id="slide-3">
+      <div class="slide" id="slide-8">
         <div class="presentation-card">
           <h1>Процессын төлөв</h1>
-          <img src="Images/A_image5.png" alt="Uy5" />
-          <p>Жишээ нь : 3 core-той CPU тэй бол 3 процессыг зэрэг ажиллуулах боломжтой.</p>     
+          <img src="Images/A_image3.png" alt="Process State 3" />
+          <img src="Images/A_image4.png" alt="Process State 4" />
         </div>
       </div>
+
       <!-- Slide 9 -->
-      <div class="slide" id="slide-3">
+      <div class="slide" id="slide-9">
         <div class="presentation-card">
-          <h1>Context switch</h1>
-          <img src="Images/A_image6.png" alt="Uy6" />
-          <p>Компьютер дээр ажиллаж байгаа бүх програм хангамжууд нь хэд хэдэн
-            дарааллсан процесс хэлбэрээр зохион байгууллагддаг.</br> Процесс нь CPU дээр ажиллах 
-            тодорхой хугацаатай байдаг ба үүнийг context switch гэдэг. Энэ нь процесс хоорондын
-          шилжилтыг хэлнэ. </p>     
+          <h1>Процессын төлөв</h1>
+          <img src="Images/A_image5.png" alt="CPU Process" />
+          <p>
+            Жишээ нь: 3 core-той CPU тэй бол 3 процессыг зэрэг ажиллуулах
+            боломжтой.
+          </p>
         </div>
       </div>
+
       <!-- Slide 10 -->
-      <div class="slide" id="slide-3">
+      <div class="slide" id="slide-10">
         <div class="presentation-card">
-          <h1>Процессын удирдлагын блок</h1>
-          <img src="Images/A_image7.png" alt="Uy7" />
-          <p>Үйлдийн системд процесс бүрийг <strong>процессын удирдлагын блокоор 
-            (PCB)</strong> дүрсэлдэг. Энэ нь тодорхой үйл явцтай холбоотой олон мэдээллийг агуулдаг.</p>                 
+          <h1>Context Switch</h1>
+          <img src="Images/A_image6.png" alt="Context Switch" />
+          <p>
+            Компьютер дээр ажиллаж байгаа бүх програм хангамжууд нь хэд хэдэн
+            дарааллсан процесс хэлбэрээр зохион байгууллагддаг. Процесс нь CPU
+            дээр ажиллах тодорхой хугацаатай байдаг ба үүнийг context switch
+            гэдэг. Энэ нь процесс хоорондын шилжилтыг хэлнэ.
+          </p>
         </div>
       </div>
+
       <!-- Slide 11 -->
-      <div class="slide" id="slide-3">
+      <div class="slide" id="slide-11">
         <div class="presentation-card">
           <h1>Процессын удирдлагын блок</h1>
-          <img src="Images/A_image10.png" alt="Uy7" />
-          <p>Үүнд :</p>
-          <ol style="margin-left: 0; padding-left: 20px; text-align: left;">
+          <img src="Images/A_image7.png" alt="PCB" />
+          <p>
+            Үйллийн системд процесс бүрийг
+            <strong>процессын удирдлагын блокоор (PCB)</strong> дүрсэлдэг. Энэ
+            нь тодорхой үйл явцтай холбоотой олон мэдээллийг агуулдаг.
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 12 -->
+      <div class="slide" id="slide-12">
+        <div class="presentation-card">
+          <h1>Процессын удирдлагын блок</h1>
+          <img src="Images/A_image10.png" alt="PCB Details" />
+          <p>Үүнд:</p>
+          <ol style="margin-left: 0; padding-left: 20px; text-align: left">
             <li>Процессын төлөв</li>
             <li>Програмын тоолуур</li>
             <li>Төв процессорын регистрүүд</li>
             <li>Төв процессорын төлөвлөлтийн мэдээлэл</li>
             <li>Хэрэглэгчийн мэдээлэл</li>
             <li>О/Г төлөвийн мэдээлэл</li>
-          </ol>                       
+          </ol>
         </div>
       </div>
-      <!-- Additional slides can follow this structure -->
+      <!-- Slide 12 -->
+      <div class="slide" id="slide-12">
+        <div class="presentation-card">
+          <h1>Салбар процесс гэж юу вэ? (Threads)</h1>
+
+          <p>
+            Салбар процесс нь тодорхой зорилгод нийцсэн логик дараалал бүхий үйл
+            ажиллагааны багц юм. Салбар процесс нь үйл ажиллагаа нь том
+            процессийн нэг хэсэг юм.Томоохон процессыг эцэг процесс гэж нэрлэдэг
+            бөгөөд салбар процессийг хүүхэд процесс гэж ч нэрлэдэг.
+          </p>
+
+          <ol>
+            <li>Хэрэглэгчийн түвшний Threads</li>
+            <li>Цөмийн түвшний Threads</li>
+            <li>Холимог түвшний Threads</li>
+          </ol>
+        </div>
+      </div>
+      <!-- Slide 12 -->
+      <div class="slide" id="slide-12">
+        <div class="presentation-card">
+          <h1>Хэрэглэгчийн түвшний Threads (ULTs)</h1>
+
+          <p>
+            Эдгээр салбар процессийг хэрэглэгчийн түвшний library удирддаг.
+            Тэдгээрийг цөмийн гаднах хэрэглэгчийн орон зайд бүтээж, төлөвлөж,
+            удирддаг.
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 12 -->
+      <div class="slide" id="slide-12">
+        <div class="presentation-card">
+          <h1>Хэрэглэгчийн түвшний салбар процессийн давуу тал</h1>
+
+          <ul>
+            <li>
+              Хурдан бөгөөд хялбар үүсгэх: Хэрэглэгчийн түвшний салбар
+              процессийг илүү хурдан үүсгэж, удирдах боломжтой.
+            </li>
+            <li>
+              Олон талт: Тэдгээрийг янз бүрийн үйлдлийн системүүдэд хэрэгжүүлэх
+              боломжтой.
+            </li>
+            <li>
+              Цөмийн горимын эрх шаардлагагүй: Цөмийн горимд шилжихгүйгээр
+              контекст солих боломжтой.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Slide 12 -->
+      <div class="slide" id="slide-12">
+        <div class="presentation-card">
+          <h1>Хэрэглэгчийн түвшний салбар процессийн сул талууд</h1>
+
+          <ul>
+            <li>
+              Олон процессорын хязгаарлагдмал хэрэглээ: Олон урсгалтай
+              програмууд олон процессорыг бүрэн ашиглахгүй байх.
+            </li>
+            <li>
+              Блоклох асуудал: Нэг салбар процессод блоклох үйлдэл нь бүх
+              процессыг зогсоож болно.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Slide 12 -->
+      <div class="slide" id="slide-12">
+        <div class="presentation-card">
+          <h1>Цөмийн түвшний Threads (KLTs)</h1>
+
+          <p>
+            Эдгээр салбар процессийг үйлдлийн системийн цөм шууд удирддаг.
+            Үйлдлийн систем нь цөмийн түвшинд хуваарь гаргаж, удирддаг. Жишээ –
+            Цөмийн түвшний салбар процессний жишээ нь Java урсгалууд, Линукс
+            дээрх POSIX урсгал гэх мэт.
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 12 -->
+      <div class="slide" id="slide-12">
+        <div class="presentation-card">
+          <h1>Цөмийн түвшний салбар процессийн давуу тал</h1>
+
+          <ul>
+            <li>
+              Жинхэнэ параллелизм: Цөмийн урсгалууд нь олон урсгалтай үед бодит
+              зэрэгцээ гүйцэтгэлийг зөвшөөрдөг.
+            </li>
+            <li>
+              Гүйцэтгэлийн тасралтгүй байдал: Бусад урсгалууд блоклогдсон байсан
+              ч үргэлжлүүлэн ажиллах боломжтой.
+            </li>
+            <li>
+              Системийн нөөцөд хандах хандалт: Цөмийн урсгалууд нь системийн
+              түвшний функцууд, түүний дотор I/O үйлдлүүд рүү шууд хандах
+              боломжтой.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="slide" id="slide-12">
+        <div class="presentation-card">
+          <h1>Цөмийн түвшний салбар процессийн сул тал</h1>
+
+          <ul>
+            <li>
+              Удирдлагын нэмэлт зардал: Цөмийн салбар процесс үүсгэх, удирдахад
+              илүү их цаг зарцуулдаг.
+            </li>
+            <li>
+              Цөмийн горимд шилжих: Цөм рүү горим шилжихийг шаарддаг бөгөөд
+              нэмэлт зардал нэмнэ.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="slide" id="slide-12">
+        <div class="presentation-card">
+          <h1>Процесс ба салбар процессийн ялгаа</h1>
+          <img src="Images/B_image1.jpg" alt="Thank You Image" />
+          <p>
+            Тодорхойлолт, Хэмжээ ,Хурд ,Нөөц хуваалцах ,Нөлөөлөл ,Санах ой гэх
+            мэт параметрүүдээр ялгаатай байдаг байна.
+          </p>
+        </div>
+      </div>
+      <div class="slide" id="slide-12">
+        <div class="presentation-card">
+          <h1>Процесс ба салбар процессийн ялгаа</h1>
+
+          <table>
+            <tr>
+              <th>Параметр</th>
+              <th>Процесс</th>
+              <th>Салбар процесс</th>
+            </tr>
+            <tr>
+              <td>Тодорхойлолт</td>
+              <td>
+                Процесс нь өөрийн санах ойн орон зайтай бие даасан гүйцэтгэх
+                нэгж юм.
+              </td>
+              <td>
+                Салбар процесс нь процессын жижиг хэсэг бөгөөд санах ойн зайг
+                ижил процессын бусад салбар процессуудтай хуваалцдаг.
+              </td>
+            </tr>
+            <tr>
+              <td>Хэмжээ</td>
+              <td>
+                Процессууд нь өөрийн гэсэн хаягийн орон зай, нөөцтэй тул илүү их
+                зай эзлэн хүнд болдог.
+              </td>
+              <td>
+                Салбар процессууд нь ижил хаягийн зайг хуваалцдаг тул тэдгээрийг
+                хөнгөн болгодог.
+              </td>
+            </tr>
+            <tr>
+              <td>Хурд</td>
+              <td>
+                Процессуудын хооронд шилжих нь санах ой болон нөөцийн
+                менежментээс шалтгаалан илүү их хугацаа шаарддаг.
+              </td>
+              <td>
+                Салбар процессууд нь нэг санах ой болон нөөцийг хуваалцдаг тул
+                тэдгээрийн хооронд шилжих нь илүү хурдан байдаг.
+              </td>
+            </tr>
+            <tr>
+              <td>Нөөц хуваалцах</td>
+              <td>
+                Процессууд нь анхдагч байдлаар нөөцөө хуваалцдаггүй бөгөөд
+                харилцахын тулд процесс хоорондын харилцааны (IPC inter-process
+                communication) механизм шаардлагатай.
+              </td>
+              <td>
+                Салбар процессууд нь процессын хүрээнд нөөцөө хуваалцдаг тул
+                илүү хялбар харилцдаг.
+              </td>
+            </tr>
+            <tr>
+              <td>Нөлөөлөл</td>
+              <td>Хэрэв нэг процесс гацвал бусад процесст нөлөөлөхгүй.</td>
+              <td>
+                Хэрэв нэг салбар процесс гацвал энэ нь ижил процессын бусад
+                салбар процесснд нөлөөлж болзошгүй.
+              </td>
+            </tr>
+            <tr>
+              <td>Санах ой</td>
+              <td>Процесс ихэвчлэн салангид байдаг.</td>
+              <td>Санах ой хуваалцдаг.</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="slide" id="slide-12">
+        <div class="presentation-card">
+          <h1>Процессийн менежмент</h1>
+          <img src="Images/B_image2.jpg" alt="Thank You Image" />
+          <p>
+            Энэ нь үйлдлийн системийн чухал хэсэг юм. Энэ нь одоо ажиллаж байгаа
+            процессуудыг удирдах замаар таны компьютерийн ажиллагааг хянах
+            боломжийг танд олгоно. Үүнд шаардлагагүй болсон процессуудыг
+            дуусгах, үйл явцын тэргүүлэх чиглэлийг тогтоох гэх мэт зүйлс орно.
+            Та үүнийг компьютер дээрээ ч хийж болно.
+          </p>
+        </div>
+      </div>
+
       <!-- Slide 20 -->
       <div class="slide" id="slide-20">
         <div class="presentation-card">
           <h1>Thank You!</h1>
-          <img src="images/thankyou.jpg" alt="Thank You Image" />
-          <p>End of Presentation</p>
+          <svg
+            viewBox="0 0 200 200"
+            width="400"
+            height="400"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="100"
+              cy="100"
+              fill="yellow"
+              r="78"
+              stroke="black"
+              stroke-width="3"
+            />
+            <g class="eyes">
+              <circle cx="61" cy="82" r="12" />
+              <circle cx="127" cy="82" r="12" />
+            </g>
+            <path
+              d="m136.81 116.53c.69 26.17-64.11 42-81.52-.73"
+              style="fill: none; stroke: black; stroke-width: 3"
+            />
+          </svg>
+          <p>Энэ Smile -г бас кодоор хийсэн шүү.</p>
         </div>
       </div>
     </div>
