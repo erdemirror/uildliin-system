@@ -21,18 +21,109 @@
         <div class="presentation-card">
           <h1>What is a Process?</h1>
           <img src="Images/image2.jpg" alt="Process Image" />
-          <p>A process is a program in execution.</p>
+          <p>Процесс (process/task) гэдэг нь үйлдийн системийн удирдлаган доор компьютерийн нөөцөөр 
+            (санах ой, процессорын хугацаа г.м) тусгайлан хангагдсан, төв процессорт гүйцэтгэгдэх ажлыг 
+            хэлнэ. Процесс нь ямар нэгэн програм эсвэл програмын нэг хэсэг байж болно..</p>
         </div>
       </div>
       <!-- Slide 3 -->
+      <div class="slide" id="slide-2">
+        <div class="presentation-card">
+          <h1>Процесс гэж юу вэ ?</h1>
+          <img src="Images/A_image8.png" alt="Software" />
+          <p>Компьютерийн бүтцийг Hardware, Software гэж хуваан үзэж болно
+            Application гэсэн давхрага нь Software - тайгаа шууд хамааралтай ба энэ нь хэрэглэгчийн
+            удирдаж байгаа бүх л application, program - ийг агуулдаг гэдэгийг үзсэн.<div class=""></div></p>
+        </div>
+      </div>
+      <!-- Slide 4 -->
+      <div class="slide" id="slide-2">
+        <div class="presentation-card">
+          <h1>Процесс гэж юу вэ ?</h1>
+          <img src="Images/A_image1.png" alt="Task Management" />
+          <p>Үйлдийн систем буюу Software давхрага нь их зүйлд ашиглагддаг. Тэдний
+            нэг нь Task Management юм. Энэ нь хэрэглэгчийн эсвэл үйлдийн систем өөрөө ч 
+            эхлүүлсэн CPU дээр ажиллаж байгаа програмыг хэлнэ.<div class=""></div></p>
+        </div>
+        
+      </div>
+      <!-- Slide 5 -->
       <div class="slide" id="slide-3">
         <div class="presentation-card">
-          <h1>Characteristics of Processes</h1>
-          <img src="Images/image1.jpg" alt="Characteristics Image" />
-          <ul>
-            <li>Has its own memory space</li>
-            <li>Independent execution</li>
-          </ul>
+          <h1>Процессын төлөв</h1>
+          <img src="Images/A_image2.png" alt="Uy" />
+          <p>Процесс нь үргэлж ямар нэгэн төлөвт байдаг.</p>
+          <ol style="margin-left: 0; padding-left: 20px; text-align: left;">
+            <li>New</li>
+            <li>Ready</li>
+            <li>Running</li>
+            <li>Waiting</li>
+            <li>Terminated</li>
+          </ol>                       
+        </div>
+      </div>
+      <!-- Slide 6 -->
+      <div class="slide" id="slide-3">
+        <div class="presentation-card">
+          <h1>Процессын төлөв</h1>
+          <img src="Images/A_image9.png" alt="Uy2" />
+          <p>Процесс нь үүсэх үедээ New төлөвт байна. CPU дээр ажиллах боломжтой 
+            болсон үедээ Ready төлөвт шилжинэ. Үйлдийн системд нь OS Scheduler буюу төлөвлөгч байдаг.
+            Энэ нь одоо Run хийж буй Процессыг хангалттай удаан үргэлжилсэн гэж үзвэл тэр 
+            процессыг Waiting эсвэл буцаан Ready төлөвт шилжүүлдэг.
+          </p>     
+        </div>
+      </div>
+      <!-- Slide 7 -->
+      <div class="slide" id="slide-3">
+        <div class="presentation-card">
+          <h1>Процессын төлөв</h1>
+          <img src="Images/A_image3.png" alt="Uy3" />
+          <img src="Images/A_image4.png" alt="Uy4" />
+        </div>
+      </div>
+      <!-- Slide 8 -->
+      <div class="slide" id="slide-3">
+        <div class="presentation-card">
+          <h1>Процессын төлөв</h1>
+          <img src="Images/A_image5.png" alt="Uy5" />
+          <p>Жишээ нь : 3 core-той CPU тэй бол 3 процессыг зэрэг ажиллуулах боломжтой.</p>     
+        </div>
+      </div>
+      <!-- Slide 9 -->
+      <div class="slide" id="slide-3">
+        <div class="presentation-card">
+          <h1>Context switch</h1>
+          <img src="Images/A_image6.png" alt="Uy6" />
+          <p>Компьютер дээр ажиллаж байгаа бүх програм хангамжууд нь хэд хэдэн
+            дарааллсан процесс хэлбэрээр зохион байгууллагддаг.</br> Процесс нь CPU дээр ажиллах 
+            тодорхой хугацаатай байдаг ба үүнийг context switch гэдэг. Энэ нь процесс хоорондын
+          шилжилтыг хэлнэ. </p>     
+        </div>
+      </div>
+      <!-- Slide 10 -->
+      <div class="slide" id="slide-3">
+        <div class="presentation-card">
+          <h1>Процессын удирдлагын блок</h1>
+          <img src="Images/A_image7.png" alt="Uy7" />
+          <p>Үйлдийн системд процесс бүрийг <strong>процессын удирдлагын блокоор 
+            (PCB)</strong> дүрсэлдэг. Энэ нь тодорхой үйл явцтай холбоотой олон мэдээллийг агуулдаг.</p>                 
+        </div>
+      </div>
+      <!-- Slide 11 -->
+      <div class="slide" id="slide-3">
+        <div class="presentation-card">
+          <h1>Процессын удирдлагын блок</h1>
+          <img src="Images/A_image10.png" alt="Uy7" />
+          <p>Үүнд :</p>
+          <ol style="margin-left: 0; padding-left: 20px; text-align: left;">
+            <li>Процессын төлөв</li>
+            <li>Програмын тоолуур</li>
+            <li>Төв процессорын регистрүүд</li>
+            <li>Төв процессорын төлөвлөлтийн мэдээлэл</li>
+            <li>Хэрэглэгчийн мэдээлэл</li>
+            <li>О/Г төлөвийн мэдээлэл</li>
+          </ol>                       
         </div>
       </div>
       <!-- Additional slides can follow this structure -->
