@@ -19,7 +19,7 @@ body {
 
 /* Main paragraph background card */
 .presentation-card {
-  width: 600px;
+  width: 1000px;
   background: rgba(255, 255, 255, 0.5); /* Translucent background */
   padding: 3rem;
   border-radius: 12px;
